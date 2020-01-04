@@ -1,0 +1,38 @@
+body{
+  margin:0px;
+  padding: 0px;
+}
+
+
+nav{
+  background-color: MediumSeaGreen;
+}
+
+h2{
+  margin-left: 750px;
+  margin-top:15px;
+  color :#33A5FF;
+}
+
+h1{
+  color :#33A5FF;
+  margin-left: -10px;
+}
+
+.row img{
+  margin-left: 50px;
+  margin-top: 8px;
+}
+
+.footer{
+  background-color: MediumSeaGreen;
+  margin-top: 490px;
+  position: static;
+}
+
+.footer img{
+  margin-top: 20px;
+}
+ .footer p{
+   margin-top: -20px;
+ }

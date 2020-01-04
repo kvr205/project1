@@ -1,0 +1,107 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="{% static "bootstrap/bootstrap.min.css" %}">
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+
+    <link rel="stylesheet" href="{% static "css/register.css" %}">
+    <title>Register</title>
+  </head>
+  <body>
+      <div class="row">
+        <img src="{% static "images/cbi.jpg" alt="" %}"style="width:50px;height:50px;">
+        <a class="nav-link" href="base.html"><h1>CBI</h1></a>
+        <h2>Corporate Bank Of India</h2>
+      </div>
+
+
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg ">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+ <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+ <ul class="navbar-nav mr-auto">
+   <li class="nav-item">
+     <a class="nav-link" href="index.html"> <span class="sr-only">(current)</span><h3>Registration Form</h3></a>
+   </li>
+   <li class="nav-item">
+     <a class="nav-link" href="services.html"></a>
+   </li>
+   <li class="nav-item">
+     <a class="nav-link" href="investors.html"></a>
+   </li>
+   <li class="nav-item">
+     <a class="nav-link" href="cc.html"></a>
+   </li>
+
+ </ul>
+
+</div>
+</nav>
+
+
+
+<div class="container">
+
+
+       <div>
+           {% for message in messages %}
+           <h6 style="color:red;">{{message}}</h6>
+           {% endfor %}
+       </div>
+
+
+
+    <form method="post">
+       {% csrf_token %}
+      <div class="row">
+
+    <div class="col-lg-4"><h5>Firstname</h5></div> <div class="col-lg-8">:&nbsp&nbsp&nbsp<input type="text" name="first_name" Placeholder="Firstname"></div>
+    <div class="col-lg-4"><h5>Lastname </h5> </div> <div class="col-lg-8">:&nbsp&nbsp&nbsp<input type="text" name="last_name" Placeholder="Lastname" ></div>
+    <div class="col-lg-4"><h5>Email    </h5> </div>  <div class="col-lg-8">:&nbsp&nbsp&nbsp<input type="email" name="email" Placeholder="Email"></div>
+    <div class="col-lg-4"><h5>Username </h5> </div> <div class="col-lg-8">:&nbsp&nbsp&nbsp<input type="username" name="username" Placeholder="Username"></div>
+    <div class="col-lg-4"><h5>Password </h5> </div>  <div class="col-lg-8">:&nbsp&nbsp&nbsp<input type="password" name="password1" Placeholder="Password"></div>
+    <div class="col-lg-4"><h5>Password  </h5> </div>  <div class="col-lg-8">:&nbsp&nbsp&nbsp<input type="password" name="password2" Placeholder="Confirm Password"></div>
+
+
+
+     <button type="submit" name="button">Submit</button>
+
+
+  </div>
+
+   </form>
+
+
+
+
+</div>
+
+
+
+
+
+
+    <div class="footer" id="foot" >
+         <img src="{% static "images/copy.jpg"  %}" style="width:12px;height:8px;margin-left:500px;">  <p style="margin-left:520px;">Copyright 2019</p>
+    </div>
+
+
+
+
+    <script src="{% static "https://code.jquery.com/jquery-3.4.1.slim.min.js" %}"integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+  </body>
+
+
+</html>

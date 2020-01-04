@@ -1,0 +1,120 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="{% static "bootstrap/bootstrap.min.css" %}">
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+
+    <link rel="stylesheet" href="{% static "css/index.css" %}">
+    <title>Home</title>
+  </head>
+  <body>
+      <div class="row">
+        <img src="{% static "images/cbi.jpg" alt="" %}"style="width:50px;height:50px;">
+        <a class="nav-link" href="index.html"><h1>CBI</h1></a>
+        <h2>Corporate Bank Of India</h2>
+      </div>
+
+      <nav class="navbar navbar-expand-lg ">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   <ul class="navbar-nav mr-auto">
+     <li class="nav-item">
+       <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="services.html">Services</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="investors.html">Investors</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="cc.html">Customer Care</a>
+     </li>
+
+
+
+
+   </ul>
+
+  </div>
+  </nav>
+  <div class="row" id="marq">
+    <marquee behavior="scroll" direction="left" scrollamount="5" style="color:red;">CBI never asks you for confidential information regarding OTP and PIN from customers.Such calls can be attempted by fraudsters,better be cautious and reject such calls outrightly </marquee>
+
+  </div>
+    <div class="container">
+
+
+    <div class="row" id="info">
+
+      <div class="col-lg-6" id="col1">
+
+        <ul>
+          <li>Zero balance accounts</li>
+          <li>Savings Accounts</li>
+          <li>Credit Cards</li>
+          <li>Gold Loans</li>
+          <li>Insurance policies</li>
+          <li>No transaction Charges</li>
+
+        </ul>
+
+
+      </div>
+      <div class="col-lg-6" id="col2">
+        <div class="row" id="loglogo">
+          <img src="{% static "images/loglogo.jpg" %}"  style="width:60px;height:60px;margin:auto;">
+
+        </div>
+             <div class="row" >
+
+                <h5 style="margin:auto;color:#4A235A;">PERSONAL BANKING</h5>
+
+             </div>
+        <div class="row" id="button" style="margin-left:190px;">
+          <a href= "login.html" ><button type="button" class="btn btn-primary btn-lg"><h5>Login</h5></button>
+  </a>
+
+        </div>
+
+      </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer" id="foot" >
+         <img src="{% static "images/copy.jpg"  %}" style="width:12px;height:8px;margin-left:500px;">  <p style="margin-left:520px;">Copyright 2019</p>
+    </div>
+
+
+
+
+    <script src="{% static "https://code.jquery.com/jquery-3.4.1.slim.min.js" %}"integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+  </body>
+
+
+</html>
